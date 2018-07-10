@@ -1,0 +1,762 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  }
+
+  .clouds {
+    position: absolute;
+    height:250px;
+    width: 450px;
+    opacity: 1;
+    animation-name: float;
+    animation-duration: 50s;
+    animation-fill-mode: forwards;
+    z-index: 99;
+
+  }
+
+  .clouds1 {
+    position: absolute;
+    height:250px;
+    width: 450px;
+    left: 1000px;
+    opacity: 1;
+    animation-name: float;
+    animation-duration: 60s;
+    animation-fill-mode: forwards;
+    z-index: 99;
+    }
+
+
+    .clouds2 {
+      position: absolute;
+      height:250px;
+      width: 450px;
+      left: -750px;
+      opacity: 1;
+      animation-name: float;
+      animation-duration: 60s;
+      animation-fill-mode: forwards;
+      z-index: 99;
+
+    }
+
+    .clouds3 {
+      position: absolute;
+      height:250px;
+      width: 450px;
+      left: -1750px;
+      opacity: 1;
+      animation-name: float;
+      animation-duration: 60s;
+      animation-fill-mode: forwards;
+      z-index: 99;
+
+    }
+
+
+    .pipe {
+      height: 500px;
+      width: 450px;
+      position: absolute;
+      right: 250px;
+      top: -250px;
+      z-index: 1;
+    }
+
+
+
+  .grass, .sky, .road {
+    position: relative;
+  }
+
+  .sky {
+    height: 40%;
+    background: skyblue;
+    animation-name: sunset;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+    }
+
+    .tombstone1 {
+      left: 550px;
+      top: 500px;
+      position: absolute;
+      animation-name: grave;
+      animation-duration: 4s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 10s;
+    }
+
+    .tombstone2 {
+      left: 750px;
+      top: 500px;
+      position: absolute;
+      animation-name: grave;
+      animation-duration: 4s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 10s;
+    }
+
+    .tombstone3 {
+      left: 950px;
+      top: 500px;
+      position: absolute;
+      animation-name: grave;
+      animation-duration: 4s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 10s;
+    }
+
+    .tombstone4 {
+      left: 1150px;
+      top: 500px;
+      position: absolute;
+      animation-name: grave;
+      animation-duration: 4s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 10s;
+    }
+
+    .morrigan {
+      right: 350px;
+      bottom: -325px;
+      height: 325px;
+      width: 200px;
+      position: absolute;
+      animation-name: pipe;
+      animation-duration: 25s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 9s;
+    }
+
+    .zombie1 {
+      left: -150px;
+      bottom: -30px;
+      height: 275px;
+      width: 175px;
+      position: absolute;
+      animation-name: zombiewalk;
+      animation-duration: 65s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 5s;
+    }
+
+    .zombie2 {
+      left: -150px;
+      bottom: 100px;
+      height: 275px;
+      width: 175px;
+      z-index: 3;
+      position: absolute;
+      animation-name: zombiewalk;
+      animation-duration: 95s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 6s;
+    }
+
+    .zombie3 {
+      right: -150px;
+      bottom: 250px;
+      height: 275px;
+      width: 175px;
+      transform: scaleX(-1);
+      position: absolute;
+      z-index: 1;
+      animation-name: zombiewalk2;
+      animation-duration: 95s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 6s;
+    }
+
+    .blackbat1 {
+      right: -200px;
+      /* bottom: -150px; */
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      animation-name: batflight;
+      animation-duration: 12s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 9s;
+    }
+
+    .blackbat2 {
+      right: -200px;
+      /* bottom: -150px; */
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      animation-name: batflight;
+      animation-duration: 13s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 9.5s;
+    }
+
+    .blackbat3 {
+      right: -200px;
+      /* bottom: -150px; */
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      animation-name: batflight;
+      animation-duration: 15s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 12s;
+    }
+
+    .blackbat4 {
+      right: -200px;
+      /* bottom: -150px; */
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      animation-name: batflight;
+      animation-duration: 16s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 12.5s;
+    }
+
+    .blackbat5 {
+      left: -200px;
+      /* bottom: -150px; */
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      transform: scaleX(-1);
+      animation-name: batflight2;
+      animation-duration: 13s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 10s;
+    }
+
+    .blackbat6 {
+      left: -275px;
+      /* bottom: -150px; */
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      transform: scaleX(-1);
+      animation-name: batflight2;
+      animation-duration: 14s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 11s;
+    }
+
+    .blackbat7 {
+      left: -350px;
+      /* bottom: -150px; */
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      transform: scaleX(-1);
+      animation-name: batflight2;
+      animation-duration: 16s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 12.5s;
+    }
+
+    .blackbat8 {
+      left: -400px;
+      /* bottom: -150px; */
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      transform: scaleX(-1);
+      animation-name: batflight2;
+      animation-duration: 20s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 13s;
+    }
+
+    .fire {
+      bottom: 100px;
+      right: 100px;
+      height: 500px;
+      width: 500px;
+      opacity: 0;
+      position: absolute;
+      animation-name: flame;
+      animation-duration: 6s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 11s;
+    }
+
+    .fire2 {
+      bottom: 150px;
+      left: 100px;
+      height: 500px;
+      width: 500px;
+      opacity: 0;
+      z-index: 0;
+      position: absolute;
+      animation-name: flame;
+      animation-duration: 6s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 11s;
+    }
+
+    .donkeykong {
+      top: -1075px;
+      left: 875px;
+      height: 500px;
+      width: 500px;
+      z-index: 2;
+      position: absolute;
+      animation-name: monkey;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 15s;
+    }
+
+    .ninja {
+      right: -175px;
+      bottom: -150px;
+      height: 335px;
+      width: 250px;
+      position: absolute;
+      transform: scaleX(-1);
+      animation-name: ninjawalk;
+      animation-duration: 14s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 9s;
+    }
+
+    .pig {
+      right: -225px;
+      bottom: 150px;
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      z-index: 2;
+      transform: scaleX(-1);
+      animation-name: pigwalk;
+      animation-duration: 12s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 8s;
+    }
+
+    .evilmushroom {
+      right: 425px;
+      bottom: -100px;
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      animation-name: pipe2;
+      animation-duration: 20s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      /* animation-delay: 1s; */
+    }
+
+    .sun {
+      top:25px;
+      left: 100px;
+      height: 350px;
+      width: 350px;
+      position: absolute;
+      animation-name: sunrise;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 5.5s;
+    }
+
+    .explosion {
+      top: 35px;
+      right: 860px;
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      opacity: 0;
+      z-index:99;
+      animation-name: explode;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 5s;
+    }
+
+    .moon {
+      height: 400px;
+      width: 400px;
+      top: -500px;
+      left: 100px;
+      position: absolute;
+      animation-name: moonrise;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 8s;
+
+    }
+
+  .grass {
+    height: 30%;
+    background: seagreen;
+    animation-name: sunset1;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+  }
+
+  .road {
+    height: 30%;
+    background-image: url("../img/wall.jpg");
+    box-sizing: border-box;
+    /* border-top: 10px solid grey; */
+    width:100%;
+  }
+
+  .lines {
+    box-sizing: border-box;
+    border: 5px dashed yellow;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    z-index: 0;
+
+  }
+
+  .mario {
+    position: absolute;
+    top:-40px;
+    left: 0px;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    animation-name: run;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    }
+
+    .luigi {
+      position: absolute;
+      top:-40px;
+      left: 0px;
+      height: 175px;
+      width: 150px;
+      opacity: 0;
+      animation-name: run;
+      animation-duration: 4s;
+      animation-fill-mode: forwards;
+      animation-delay: 4s;
+    }
+
+    .bowser {
+      position: absolute;
+      top:-40px;
+      right: 0px;
+      height: 200px;
+      width: 200px;
+      opacity: 0;
+      z-index: 2;
+      animation-name: run2;
+      animation-duration: 8s;
+      transform: scaleX(-1);
+      animation-fill-mode: forwards;
+      animation-delay: 2s;
+    }
+
+  .bigMario {
+    height: 450px;
+    width: 300px;
+    z-index: 99;
+    position: absolute;
+    bottom: 300px;
+    left: -250px;
+    animation-name: run3;
+    animation-duration: 16s;
+    /* transform: scaleX(-1); */
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+
+  }
+
+  .princess {
+    height: 275px;
+    width: 200px;
+    z-index: 0;
+    position: absolute;
+    bottom: 300px;
+    right: -250px;
+    animation-name: run4;
+    animation-duration: 14s;
+    transform: scaleX(-1);
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+  }
+
+  .bat {
+    height: 275px;
+    width: 200px;
+    z-index: 0;
+    position: absolute;
+    bottom: 300px;
+    right: -250px;
+    animation-name: run5;
+    animation-duration: 16s;
+    animation-fill-mode: forwards;
+    animation-delay: 5.5s;
+  }
+
+
+
+  .megaman {
+    height: 300px;
+    width: 250px;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: -250px;
+    animation-name: run4;
+    animation-duration: 16s;
+    transform: scaleX(-1);
+    animation-fill-mode: forwards;
+    /* animation-delay: 4s; */
+
+  }
+
+
+  /* KEYFRAMES */
+
+  @keyframes run {
+    0% {transform: translateX(0px)
+        translateY(0px)
+      rotate(0deg);
+    opacity: 0}
+    10% {transform: translateX(0px)
+          translateY(0px)
+        rotate(0deg);
+      opacity: 1}
+    50% {transform: translateX(1000px)
+      translateY(-400px)
+      rotate(360deg);
+    opacity: 1}
+
+      100% {transform: translateX(2300px)
+      translateY(0px)
+    rotate(360deg);
+  opacity: 1}
+  }
+
+  @keyframes run2 {
+    0% {transform: translateX(0px)
+        translateY(0px)
+      rotate(0deg)
+    scaleX(-1);
+  opacity: 0}
+
+  10% {transform: translateX(0px)
+      translateY(0px)
+    rotate(0deg)
+  scaleX(-1);
+opacity: 1}
+
+    50% {transform: translateX(-750px)
+      translateY(-400px)
+      rotate(-360deg)
+    scaleX(-1);
+  opacity: 1}
+
+      100% {transform: translateX(-2300px)
+      translateY(0px)
+    rotate(360deg) scaleX(-1);
+  opacity: 1}
+  }
+
+  @keyframes run3 {
+    0% {transform: translateX(-200px)
+      }
+    100% {transform: translateX(2500px)}
+  }
+
+  @keyframes run4 {
+    0% {transform: translateX(200px)
+      scaleX(-1)
+      }
+    100% {transform: translateX(-2500px)
+    scaleX(-1)}
+  }
+
+  @keyframes run5 {
+    0% {transform: translateX(200px)
+            }
+    100% {transform: translateX(-2500px)
+    }
+  }
+
+  @keyframes float {
+    0% {transform: translateX(0px);
+      opacity: 1;
+      }
+      50% {
+        opacity: 1;
+        }
+    100% {transform: translateX(2500px);
+    opacity: 0}
+  }
+
+  @keyframes sunset {
+    0% {background-color: skyblue;
+    height: 40%}
+    100% {background-color: rgb(2, 0, 89);
+    height: 50%}
+  }
+
+  @keyframes sunset1 {
+    0% {background-color: seagreen;
+      height: 30%}
+    100% {background-color: rgb(19, 69, 45);
+    height: 50%}
+  }
+
+  @keyframes moonrise {
+    0% {top: -300px}
+    100% {top: 0px}
+  }
+
+  @keyframes sunrise {
+    from { transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg);}
+to   { transform: rotate(-360deg) translateX(450px) translateY(-376px) rotate(360deg);}
+    /* 0% {top: 50px;
+    transform:translateX(30px)
+    ;}
+    100% {top: -400px} */
+  }
+
+  @keyframes grave {
+    0% {transform: translateY(0px)}
+    100% {transform: translateY(-100px)}
+  }
+
+  @keyframes zombiewalk {
+    0% {transform: translateX(0px)}
+    100% {transform: translateX(2300px)}
+  }
+
+  @keyframes zombiewalk2 {
+    0% {transform: translateX(0px)
+    scaleX(-1)}
+    100% {transform: translateX(-2300px)
+    scaleX(-1)}
+  }
+
+  @keyframes monkey {
+    0% {transform: translateY(-500px)}
+    100% {transform: translateY(950px)}
+  }
+
+  @keyframes ninjawalk {
+    0% {transform: translateX(0px)
+      translateY(0px)
+      scaleX(-1);}
+    100% {transform: translateX(-2300px)
+    translateY(-500px)
+    scaleX(-1)}
+  }
+
+  @keyframes pigwalk {
+    0% {transform: translateX(0px)
+      translateY(0px)
+      scaleX(-1);}
+    100% {transform: translateX(-2350px)
+    translateY(-400px)
+    scaleX(-1)}
+  }
+
+  @keyframes batflight {
+    0% {transform: translateX(0px)
+      translateY(0px)
+      ;}
+    100% {transform: translateX(-2350px)
+    translateY(400px)
+    }
+  }
+
+  @keyframes batflight2 {
+    0% {transform: translateX(0px)
+      translateY(0px)
+      scaleX(-1);
+      ;}
+    100% {transform: translateX(2500px)
+    translateY(400px)
+    scaleX(-1);
+
+    }
+  }
+
+@keyframes flame {
+  0% {opacity: 0
+    }
+  100% {opacity: 1
+  }
+}
+
+
+  @keyframes pipe {
+    0% {transform: translateY(135px)
+        scaleX(-1)}
+    50% {transform: translateY(-440px)
+        scaleX(-1)}
+    100% {transform: translateY(135px)
+        scaleX(-1)}
+  }
+
+  @keyframes pipe2 {
+    0% {transform: translateY(100px)
+        }
+    10% {transform: translateY(-256px)
+        }
+    15% {transform: translateY(-250px)
+      translateX(-200px)}
+
+    22% {transform: translateY(-100px)
+      translateX(-200px)}
+
+    40% {transform: translateX(-1000px)
+    translateY(-100px)}
+
+    50% {transform: translateX(-3000px)
+    translateY(-100px)}
+
+    100% {transform: translateY(0px)
+      translateX(-4000px)
+        }
+  }
+
+
+
+  @keyframes explode {
+    0% {opacity: 0}
+    50% {opacity: 1}
+    100% {opacity:0}
+  }
